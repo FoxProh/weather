@@ -1,5 +1,8 @@
-package myinteres.weather.controller;
+package ru.interes.weather.controller;
 
+import ru.interes.weather.domain.Message;
+import ru.interes.weather.domain.User;
+import ru.interes.weather.repos.MessageRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

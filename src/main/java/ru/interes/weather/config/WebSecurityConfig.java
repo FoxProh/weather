@@ -1,5 +1,7 @@
-package myinteres.weather.config;
+package ru.interes.weather.config;
 
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import ru.interes.weather.service.UserSevice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,21 +32,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/", "/registration", "/static/**", "/activate/*").permitAll()
-                .anyRequest().authenticated()
+                    .antMatchers("/", "/registration", "/static/**", "/activate/*").permitAll()
+                    .anyRequest().authenticated()
                 .and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
+                    .formLogin()
+                    .loginPage("/login")
+                    .permitAll()
                 .and()
-                .logout()
-                .permitAll();
+                    .logout()
+                    .permitAll();
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userSevice)
-                .passwordEncoder(passwordEncoder);
+ //               .passwordEncoder(passwordEncoder);
+                .passwordEncoder(NoOpPasswordEncoder.getInstance());
     }
-}
 }

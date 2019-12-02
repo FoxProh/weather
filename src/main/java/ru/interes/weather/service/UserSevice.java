@@ -1,5 +1,8 @@
-package myinteres.weather.service;
+package ru.interes.weather.service;
 
+import ru.interes.weather.domain.Role;
+import ru.interes.weather.domain.User;
+import ru.interes.weather.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
