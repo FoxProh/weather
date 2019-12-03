@@ -1,4 +1,5 @@
-package myinteres.weather.domain;
+package ru.interes.weather.domain;
+
 import org.springframework.security.core.GrantedAuthority;
 
 public enum Role implements GrantedAuthority {

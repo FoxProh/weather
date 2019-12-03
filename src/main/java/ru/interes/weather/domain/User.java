@@ -1,4 +1,4 @@
-package myinteres.weather.domain;
+package ru.interes.weather.domain;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
