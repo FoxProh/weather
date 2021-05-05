@@ -62,6 +62,11 @@
                       <FeaturePluginData displayName="Attach to Node.js/Chrome" pluginName="JavaScript Debugger" pluginId="JavaScriptDebugger" bundled="true" />
                     </value>
                   </entry>
+                  <entry key="Codeforces">
+                    <value>
+                      <FeaturePluginData displayName="Codeforces" pluginName="EduTools" pluginId="com.jetbrains.edu" />
+                    </value>
+                  </entry>
                   <entry key="ComposePreviewRunConfiguration">
                     <value>
                       <FeaturePluginData displayName="Compose Preview" pluginName="Android" pluginId="org.jetbrains.android" bundled="true" />
