@@ -1,10 +1,13 @@
 <application>
-  <component name="FileTypeManager" version="17">
+  <component name="FileTypeManager" version="18">
     <extensionMap>
-      <mapping ext="main.kts" type="Kotlin" />
-      <mapping ext="gradle.kts" type="Kotlin" />
+      <removed_mapping ext="tsv" type="CSV/TSV" />
       <mapping ext="space.kts" type="Kotlin" />
-      <removed_mapping ext="csv" approved="true" type="CSV file" />
+      <mapping ext="gradle.kts" type="Kotlin" />
+      <mapping ext="main.kts" type="Kotlin" />
+      <mapping ext="tsv" type="TSV" />
+      <removed_mapping ext="csv" approved="true" type="CSV" />
+      <removed_mapping ext="csv" approved="true" type="CSV/TSV" />
     </extensionMap>
   </component>
 </application>
