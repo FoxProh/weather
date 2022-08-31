@@ -7,6 +7,9 @@
         <url>file://C:/Aplic_Serv/mysql-connector-java-8.0.24.jar</url>
       </library>
     </driver>
+    <driver id="oracle.19">
+      <artifact id="Oracle" name="Oracle" use="true" version="21.5.0.0" />
+    </driver>
     <driver id="oracle">
       <artifact id="Oracle" name="Oracle" use="true" version="12.2.0.1" />
     </driver>
